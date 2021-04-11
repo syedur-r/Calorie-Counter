@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     
+		<meta charset="UTF-8">     
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<title>Calorie Buddy | Register</title>     
+		<link rel="stylesheet" href="./main/main.css">     
+		<link rel="stylesheet" href="./main/login.css">     
+		<script src="./main/script.js" defer></script> 
+	</head> 
+	<body>     
+		<div class="container login registerBg">         
+			<div class="top">             
+				<nav>                 
+					<a href="#" class="hamburger login-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>                 
+					<div class="show-desktop-links">                     
+						<ul class="login-desktop show-desktop" id = "nav">                            
+							<li><a href="./">Home</a></li>                         
+							<li><a href="./about">About</a></li>                         
+							<li><a href="./login">Login</a></li>                                     
+							<li><a href="./addfood">Add Food</a></li>                         
+							<li><a href="./searchfood">Search Food</a></li>                         
+							<li><a href="./updatefood">Update Food</a></li>                         
+							<li><a href="./listfood">List Food</a></li>                         
+							<li><a href="./api">API</a></li>                         
+							<li><a href="./logout">Log Out</a></li>                     
+						</ul>                 
+					</div>             
+				</nav>             
+				<header class="register">                 
+					<div class="main-header">                     
+						<h1>Register</h1>                     
+						<hr/>                    
+						<h3 class="dialogue"><%=checkDetails%></h3>
+						<form method="POST" action="/registered">                         
+							<p><input class="text-box reg-txt" type="text" name="firstname" id="firstname" placeholder="Enter first name*" required></p>           
+							<p><input class="text-box" type="text" name="lastname" id="lastname" placeholder="Enter last name*" required></p>                     
+							<p><input class="text-box" type="text" name="email" id="email" placeholder="Enter email*" required></p>                         
+							<p><input class="text-box" type="text" name="username" id="username" placeholder="Enter username*" required></p>                      
+							<p><input class="text-box" type="password" name="password" id="password" placeholder="Enter password*" required></p>                  
+							<p><input class="button" type="submit" value="Register"></p>                     
+						</form>                 
+					</div>             
+				</header>         
+			</div>     
+		</div> 
+	</body> 
+</html>

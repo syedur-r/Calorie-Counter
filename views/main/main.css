@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {     
+	--leading: 2em; 
+}
+
+body {     
+	font-family: 'Montserrat', sans-serif;     
+	margin: 0;     
+	overflow-x: hidden; 
+}
+
+.container {     
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .2)), url('https://source.unsplash.com/8manzosDSGM/1600x900');     
+	background-attachment: fixed;
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover;     
+	color: white;     
+	text-align: center;     
+	padding-bottom: 8em; 
+}
+
+.about {    
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url('https://source.unsplash.com/-YHSwy6uqvk/1600x900');     
+	background-position: 12% 40%;     
+	background-size: cover;     
+	padding-bottom: 4em; 
+}
+
+.login {     
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/jUPOXXRNdcA/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover; 
+}
+
+.registerBg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/SiwrpBnxDww/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover; 
+}
+
+.foodBg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url('https://source.unsplash.com/jZaBVEPbg1k/1600x900');     
+	background-position: 12% 40%;     
+	background-size: cover;     
+	padding-bottom: 4em; 
+}
+
+.searchBg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/mmsQUgMLqUo/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover; 
+}
+
+.updateBg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/oWN1tKuUpJI/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover; 
+}
+
+.updateformBg {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/7TStr3RJdjc/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover; 
+}
+
+.list {     
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url('https://source.unsplash.com/nTZOILVZuOg/1600x900');     
+	background-position: 12% 40%;     
+	background-repeat: no-repeat;     
+	background-size: cover;     
+	padding-bottom: 35em;
+}
+
+ul {     
+	list-style-type: none;     
+	margin: 0;     
+	padding: 0;
+	user-select: none;
+}  
+
+.login-desktop {     
+	margin-top: 1em; 
+}  
+
+nav ul li a:hover {     
+	font-size: 125%;     
+	color: rgb(174, 192, 201); 
+}
+
+.hamburger {     
+	position: absolute;     
+	display: flex;     
+	flex-direction: column;     
+	justify-content: space-between;     
+	width: 30px;     
+	height: 21px;
+	user-select: none; 
+}  
+
+.login-hamburger {     
+	left: 1em;     
+	top: 1em;
+}  
+
+.hamburger .bar {     
+	height: 3px;     
+	width: 100%;     
+	background-color: white;     
+	border-radius: 10px; 
+}
+
+header {     
+	padding: 1em 0; /*Works like a clock: top, right, bottom, left*/ 
+}  
+
+.container a, .about a{     
+	color: white;     
+	text-decoration: none;     
+	font-weight: bold;     
+	font-size: 1.2rem; 
+}
+
+.about-heading {     
+	font-size: 25px; 
+}
+
+.about-info {     
+	padding-bottom: 5em; 
+} 
+
+section {     
+	margin: 0 1em; 
+}
+
+h1 {     
+	font-size: 2.5rem;    
+	 margin: 2em 0 1.2em; 
+}  
+
+h1 span {     
+	text-transform: uppercase;     
+	display: block;     
+	font-size: 1.4rem;     
+	position: relative;     
+	z-index: 1; 
+}
+
+
+h1 span::before {     
+	content: ' ';     
+	position: absolute;     
+	width: 3em;     
+	background: rgba(174, 192, 201,0.75);     
+	height: .4em;     
+	bottom: 0;     
+	z-index: -1;     
+	margin-left: -.3em; 
+}  
+
+.container p, .about p {     
+	font-weight: bold;     
+	margin: 0 1em 3em; 
+}
+
+.info {     
+	margin: 0; 
+}  
+
+.right-col {     
+	text-align: center;     
+	margin: 3em 1em; 
+}  
+
+h2 {     
+	text-transform: uppercase;     
+	position: relative; 
+}
+
+h2::before {     
+	content: ' ';     
+	position: absolute;     
+	width: 8em;     
+	background: rgba(174, 192, 201,0.45);     
+	height: .4em;     
+	bottom: 0;     
+	z-index: -1;     
+	margin-left: -.3em; 
+}  
+
+.img {     
+	width: 100%; 
+}  
+
+p {     
+	line-height: var(--leading); 
+}  
+
+.animate-overlay {     
+	animation: overlay 3s forwards; 
+}
+
+
+/* MOBILE VIEW */ 
+@media (min-width: 310px) {     
+	img {         
+		max-width: 100%;         
+		margin: 0;     
+	}      
+	
+	.container {         
+		background-position: 55% 12%;     
+	}      
+	
+	.show-desktop {         
+		display: none;     
+	}      
+	
+	.show-desktop {         
+		flex-direction: column;         
+		align-items: flex-start;     
+	}      
+
+	.show-desktop-links li {         
+		margin-bottom: 1.5em;     
+	}      
+
+	.show-desktop.active {         
+		display: flex;         
+		align-items: center;     
+	}
+}
+
+@media (min-width: 410px) {
+	.about {
+		padding-bottom: 10em;
+	}
+}
+
+/* TABLET VIEW */ 
+@media (min-width: 730px) {     
+	section {         
+		margin: 0 4em;     
+	}      
+
+	.about {         
+		padding-bottom: 35em;     
+	} 
+}
+
+/* DESKTOP VIEW */ 
+@media (min-width: 930px) {     
+	.container, .about {         
+		text-align: left;     
+	}      
+
+	.container p, .about p, .login p {         
+		margin: 0 0 3em;     
+	}      
+
+	.container section, .about section {         
+		width: 65%;     
+	}      
+
+	.container p, .about p, .login p {         
+		margin-bottom: 0;     
+	}      
+
+	section.info {         
+		display: grid;         
+		grid-template-columns: repeat(2, 50%);         
+		grid-template-areas: "info food";     
+	}      
+
+	.right-col {         
+		grid-area: info;         
+		padding: 0 10%;         
+		text-align: left;         
+		align-self: center;     
+	}      
+
+	img {         
+		grid-area: food;     
+	}      
+
+	h2 {         
+		margin: 0;     
+	} 
+}
+
+.top {     
+	animation: fadeIn 2s forwards; 
+}
+
+
+/* BIGGER DESKTOP VIEW */ 
+@media (min-width: 1024px) {     
+	.show-desktop {         
+		display: flex;         
+		flex-direction: row;         
+		justify-content: space-around;         
+		width: 140%;         
+		align-items: center;         
+		min-height: 8vh;     
+	}      
+	
+	.login-desktop {         
+		width: 100%;     
+	}      
+
+	.about {         
+		padding-bottom: 35em;     
+	}      
+
+	.about-heading {         
+		margin-top: 4em;         
+		margin-bottom: 1rem;         
+		font-size: 30px;     
+	}          
+
+	.about-info {         
+		text-overflow: clip;         
+		padding-right: 15em;     
+	}      
+
+	.hamburger {         
+		display: none;     
+	}      
+
+	img {         
+		max-width: 100%;     
+	} 
+}
+
+
+@keyframes fadeIn {     
+	from {         
+		opacity: 0;         
+		transform: translateY(-2em);     
+	}          
+
+	to {         
+		opacity: 1;         
+		transform: translateY(0);     
+	} 
+}  
+
+@keyframes overlay {     
+	0% { opacity: 0; }     
+	30% { opacity: 1; }     
+	70% { opacity: 1; }     
+	100% { opacity: 0; } 
+}

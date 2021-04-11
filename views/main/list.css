@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+.food-body  {     
+	overflow-y: scroll;
+}
+
+.small-list {
+	margin-bottom: 10em;
+}
+
+.search-list {
+	margin-bottom: 20em;
+} 
+
+.list-container {     
+	width: 80%;     
+	margin-bottom: -30em;
+}
+
+.inner-listcontainer {
+	margin-bottom: 30em;
+	margin-top: -5em;
+}
+
+.inner-listfood .inner-container {
+	margin-top: -40em;
+	margin-bottom: 30em;
+}
+
+.button {
+	font-weight: bold;
+}
+
+.heading {     
+	font-size: 3em;     
+	text-align: center;     
+	color: #fff; 
+}
+
+.total-results {
+	display: block;
+	margin-top: -3em;
+}
+
+h1.heading.macroTitle {
+	margin-top: -.5em;
+}
+
+.total {
+	margin-top: -2.5em;
+}
+
+.list-container hr {     
+	width: 50%;     
+	margin: auto;   
+	margin-top: -2.5em;  
+	margin-bottom: 2em;     
+	padding: 2px;     
+	background: rgba(174, 192, 201,0.75);     
+	border: none; 
+}
+
+.table-container {
+	padding-bottom: 10em;
+}
+
+.h3-text {     
+	text-align: center;     
+	margin-bottom: 1.5em; 
+}  
+
+.table {     
+	width: 100%;     
+	border-collapse: collapse; 
+	user-select: text;
+}  
+
+.table thead {     
+	background-color: rgba(174, 192, 201, 0.55);     
+	text-align: center; 
+}
+
+.table thead tr th {     
+	font-size: 16px;     
+	font-weight: 600;     
+	letter-spacing: 0.35px;     
+	color: white;     
+	opacity: 1;     
+	padding: 12px;     
+	vertical-align: top;     
+	border: 1px solid rgba(174, 192, 201, 0.75); 
+}  
+
+.table tbody tr td {     
+	font-size: 16px;     
+	letter-spacing: 0.35px;     
+	font-weight: normal;        
+	color: #fff;     
+	background-color: rgba(51, 51, 51, 0.8);     
+	padding: 8px;     
+	text-align: center;     
+	border: 1px solid rgba(174, 192, 201, 0.75); 
+}
+
+.sum {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sum.operations {
+	margin-bottom: 3em;
+}
+
+.check-food {
+	transform: scale(2);
+}
+
+.text-food {
+	text-align: center;
+	transform: scale(1.1);
+	width: 50%;
+	color: white;     
+	border: none;     
+	border-bottom: 2px solid rgba(174, 192, 201,0.85);     
+	font-size: 1em;     
+	background: transparent;     
+	outline: none;   
+	text-align: center;
+}
+
+@media (max-width: 1380px) {     
+	.registered {         
+		table-layout: fixed;         
+		width: 100%;     
+	}      
+	
+	.data {         
+		word-wrap: break-word;     
+	} 
+}
+
+@media (max-width: 1024px) {     
+	.list-container {         
+		padding-bottom: 20em;     
+	}
+	
+	.inner-listfood .inner-container {                 
+		margin-top: 1.5em;         
+	} 
+}
+
+@media (max-width: 854px) {     
+	.list-container {         
+		width: 80%;         
+		padding-bottom: 2em;
+		margin-bottom: -25em;     
+	}
+
+	.inner-listcontainer {         
+		margin-bottom: 10em;        
+	}
+
+	.inner-listfood .inner-container {         
+		margin-top: 5em;
+		margin-bottom: -20em; 
+	}   
+
+	.table thead {         
+		display: none;     
+	}      
+
+	.table, .table tbody, .table tr, .table td {         
+		display: block;         
+		width: 100%;             
+	}
+
+	.table tr {         
+		margin-bottom: 15px;     
+	}      
+
+	.table tbody tr td {         
+		text-align: right;         
+		padding-left: 50%;         
+		position: relative;     
+	}      
+
+	.table td::before {         
+		content: attr(data-label);         
+		position: absolute;         
+		left: 0;         
+		width: 50%;         
+		padding-left: 15px;         
+		font-weight: 600;         
+		font-size: 14px;         
+		text-align: left;    
+	}
+	
+	.operations {
+		flex-direction: column;
+	}
+	
+	.operations .button {
+		margin-bottom: .5em;
+	}
+}
+
+@media (min-width: 790px) {
+	.inner-listfood .inner-container, {                 
+		margin-bottom: -15em;         
+	}
+}

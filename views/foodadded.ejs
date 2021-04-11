@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     
+		<meta charset="UTF-8">     
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<title>Calorie Buddy | Food Added</title>     
+		<link rel="stylesheet" href="./main/list.css">     
+		<link rel="stylesheet" href="./main/main.css">     
+		<link rel="stylesheet" href="./main/login.css"> 
+	</head> 
+	<body>     
+		<div class="container list">         
+			<div class="top">             
+				<header class="listfood inner-listfood">                 
+					<div class="list-container inner-listcontainer">
+						<div class="inner-container">                     
+							<h1 class="heading">Your Food Item Has Successfully Been Added!<br>Added By: <%= username %></h1>                     
+							<table class="table">                         
+								<thead>                             
+									<tr>                                 
+										<th>Food Name</th>                                 
+										<th>Typical Value</th>                                 
+										<th>Unit</th>                                 
+										<th>Calories</th>                                 
+										<th>Carbs</th>                                 
+										<th>Fat</th>                                 
+										<th>Protein</th>                                 
+										<th>Salt</th>                                 
+										<th>Sugar</th>                             
+									</tr>                             
+									<tbody>                                 
+										<tr>                                     
+											<td data-label="Food Name"><%= name %></td>                                     
+											<td data-label="Typical Value"><%= value %></td>                                     
+											<td data-label="Unit"><%= unit %></td>                                     
+											<td data-label="Calories"><%= calories %> kilocalories</td>                                     
+											<td data-label="Carbs"><%= carbs %>g</td>                                     
+											<td data-label="Fat"><%= fat %>g</td>                                     
+											<td data-label="Protein"><%= protein %>g</td>                                     
+											<td data-label="Salt"><%= salt %>g</td>                                     
+											<td data-label="Sugar"><%= sugar %>g</td>                                 
+										</tr>                             
+									</tbody>                         
+								</thead>                     
+							</table>
+							<div class="sum">
+								<a class="button" href="./">Home</a>                                                         
+							</div> 
+						</div>                
+					</div>             
+				</header>         
+			</div>     
+		</div> 
+	</body> 
+</html>

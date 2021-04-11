@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     
+		<meta charset="UTF-8">     
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<title>Calorie Buddy | List Food</title>     
+		<link rel="stylesheet" href="./main/list.css">     
+		<link rel="stylesheet" href="./main/main.css">     
+		<link rel="stylesheet" href="./main/login.css">     
+		<script src="./main/script.js" defer></script> 
+		<script src="./main/totalmacros.js" defer></script> 
+	</head> 
+	<body class="food-body">     
+		<div class="container list">         
+			<div class="top">             
+				<nav>                 
+					<a href="#" class="hamburger login-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>                 
+					<div class="show-desktop-links">                     
+						<ul class="login-desktop show-desktop" id="nav">                            
+							<li><a href="./">Home</a></li>                         
+							<li><a href="./about">About</a></li>                                         
+							<li><a href="./register">Register</a></li>                                     
+							<li><a href="./login">Login</a></li>                         
+							<li><a href="./addfood">Add Food</a></li>                         
+							<li><a href="./searchfood">Search Food</a></li>                         
+							<li><a href="./updatefood">Update Food</a></li>                         
+							<li><a href="./api">API</a></li>                         
+							<li><a href="./logout">Log Out</a></li>                     
+						</ul>                 
+					</div>             
+				</nav>             
+				<header class="listfood small-list">                 
+					<div class="list-container table-container">                     
+						<h1 class="heading">Food List</h1>                    
+						<hr/>
+						<table class="table">                         
+							<thead>    
+								<tr>                                 
+									<th>Select Item</th>                                 
+									<th>Food Name</th>                                 
+									<th>Typical Value</th>                                 
+									<th>Quantity</th>                                 
+									<th>Unit</th>                                 
+									<th>Calories</th>                                 
+									<th>Carbs</th>                                 
+									<th>Fat</th>                                 
+									<th>Protein</th>                                 
+									<th>Salt</th>                                 
+									<th>Sugar</th>
+									<th>User</th>                             
+								</tr>                             
+								<tbody> 
+									<% food.forEach(function(item) {%>                                
+									<tr>                                     
+										<td data-label="Select Item">
+											<input class="check-food" type="checkbox" id="check-food" name="foodCheck" value="food">
+										</td>
+										<td data-label="Food Name"><%= item.foodname %></td>                                     
+										<td id="t-value" data-label="Typical Value"><%= item.value %></td> 
+										<td data-label="Quantity">
+											<input class="text-food" type="number" id="text-food" name="foodTxt" min="0" max="900" placeholder="Qty">
+										</td>                                     
+										<td data-label="Unit"><%= item.unit %></td>                                     
+										<td id="calories" data-label="Calories"><%= item.calories %> kilocalories</td>                                
+										<td id="carbs" data-label="Carbs"><%= item.carbs %>g</td>                                     
+										<td id="fat" data-label="Fat"><%= item.fat %>g</td>                                     
+										<td id="protein" data-label="Protein"><%= item.protein %>g</td>                                     
+										<td id="salt" data-label="Salt"><%= item.salt %>g</td>                                     
+										<td id="sugar" data-label="Sugar"><%= item.sugar %>g</td>                                 
+										<td data-label="User"><%= item.username %></td>                                 
+									</tr>
+									<% }) %>                            
+								</tbody>                         
+							</thead>                     
+						</table>
+		
+						<div class="sum operations">                                                                 
+							<a class="button" id="totalMacros">Total Macros</a>                                                         
+						</div>
+
+						<div class="total-results">                                                         
+							<h1 class="heading macroTitle">Total Sum of Macros</h1>                                                         
+							<table class="table registered total">                                                                 
+								<thead>                                                                         
+									<tr>                                                                                 
+										<th>Total Calories</th>                                                                                 
+										<th>Total Carbs</th>                                                                                 
+										<th>Total Fat</th>                                                                                 
+										<th>Total Protein</th>                                                                                 
+										<th>Total Salt</th>                                                                                 
+										<th>Total Sugar</th>                                                                         
+									</tr>                                                                         
+									<tbody>                                                                                 
+										<tr>                                                                                         
+											<td id="total-calories" class="total-calories" data-label="Total Calories">0 kilocalories</td>        
+											<td id="total-carbs" class="total-carbs" data-label="Total Carbs">0g</td>                              
+											<td id="total-fat" class="total-fat" data-label="Total Fat">0g</td>                              
+											<td id="total-protein" class="total-protein" data-label="Total Protein">0g</td>                      
+											<td id="total-salt" class="total-salt" data-label="Total Salt">0g</td>                            
+											<td id="total-sugar" class="total-sugar" data-label="Total Sugar">0g</td>                          
+										</tr>                                                                         
+									</tbody>                                                                 
+								</thead>                                                         
+							</table>                                                 
+						</div>			
+					</div>             
+				</header>         
+			</div>     
+		</div> 
+	</body> 
+</html>

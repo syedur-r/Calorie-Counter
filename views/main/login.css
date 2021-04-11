@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');  
+
+* {     
+	padding: 0;     
+	margin: 0;     
+	box-sizing: border-box;     
+	font-family: 'Montserrat', sans-serif; 
+} 
+
+header {     
+	display: flex;     
+	justify-content: center;     
+	align-items: center;     
+	user-select: none;     
+	width: 100%;
+}
+
+.login-header {
+	height: 90vh;
+}
+
+.container {     
+	overflow-y: hidden; 
+}  
+
+.register {     
+	height: 130%;
+}
+
+.addFood {
+	height: 210%;
+}
+
+.inner-listfood {     
+	margin-bottom: -10em;
+}
+
+.main-header {     
+	text-align: center;     
+	transition: 0.5s;     
+	border-radius: 50px;     
+	width: 80%; 
+}
+
+.main-header:hover {     
+	-webkit-box-shadow: 0px 11px 54px 0px rgba(0, 0, 0, 0.75);     
+	-moz-box-shadow: 0px 11px 54px 0px rgba(0, 0, 0, 0.75);     
+	box-shadow: 0px 11px 54px 0px rgba(0, 0, 0, 0.75);
+	background-color: rgba(0, 0, 0, 0.7); 
+}  
+
+.main-header h1 {     
+	font-size: 4rem;     
+	color: white;     
+	margin: 20px; 
+}
+
+.main-header .dialogue {     
+	color: rgb(240, 0, 0); 
+}
+
+.main-header hr {     
+	width: 50%;     
+	margin: auto;     
+	padding: 2px;     
+	background: rgba(174, 192, 201,0.75);     
+	border: none; 
+}  
+
+.main-header h3 {     
+	margin: 20px;     
+	color: white;     
+	font-size: 2rem; 
+}
+
+.text-box {     
+	width: 90%;     
+	padding: 1rem;     
+	color: white;     
+	margin: 20px 0px;     
+	border: none;     
+	border-bottom: 2px solid rgba(174, 192, 201,0.75);     
+	font-size: 1.5rem;     
+	background: transparent;     
+	outline: none;     
+	text-align: center; 
+}  
+
+.button {     
+	padding: 1rem 3rem;     
+	font-size: 1.2rem;     
+	background: rgba(174, 192, 201,0.75);     
+	color: white;     
+	border: none;     
+	border-radius: 50px;     
+	cursor: pointer;     
+	transition: 0.5s;     
+	margin: 20px;     
+	outline: none;
+	margin-bottom: -1.5em;
+}
+
+.search-btn {
+	margin-top: -1.5em;
+}
+
+.button:hover {    
+	transform: scale(1.1); 
+}
+
+.logout {
+	margin-top: 15em;
+	margin-bottom: 8em;
+}
+
+@media (min-width: 1024px) {     
+	.main-header {         
+		width: 40%;     
+	}      
+
+	body {         
+		overflow-y: hidden;     
+	}      
+
+	.text-box {         
+		text-align: left; 
+		margin-top: -.01em;
+	}
+	
+	.register {         
+		height: 90%; 
+	}
+
+	.addFood {
+		height: 135%;
+	}
+
+	.button {
+		margin-bottom: 2em;
+	}
+
+	.search-btn {
+		margin-top: 2em;
+	}
+
+	.inner-listfood {         
+		height: 130%;
+		margin-top: 52em;
+		margin-bottom: -10em;     
+	}
+}
+
+@media (min-width: 1149px) {
+	.inner-listfood {
+		height: 95%;
+	}
+}
+
+@media (min-width: 1682px) {
+	.addFood {                 
+		height: 105%;         
+	}
+
+	.search {
+		height: 80%;
+	}
+
+	.inner-listfood {
+		height: 125%;
+		margin-top: 40em;
+		margin-bottom: -50em;
+	}
+}

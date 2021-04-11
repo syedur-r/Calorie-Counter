@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     
+		<meta charset="UTF-8">     
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<title>Calorie Buddy | Search Result</title>     
+		<link rel="stylesheet" href="./main/list.css">     
+		<link rel="stylesheet" href="./main/main.css">     
+		<link rel="stylesheet" href="./main/login.css">     
+		<script src="./main/script.js" defer></script> 
+	</head> 
+	<body class="food-body">     
+		<div class="container list">         
+			<div class="top">             
+				<nav>                 
+					<a href="#" class="hamburger login-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>                 
+					<div class="show-desktop-links">                     
+						<ul class="login-desktop show-desktop" id="nav">                            
+							<li><a href="./">Home</a></li>                         
+							<li><a href="./about">About</a></li>                                         
+							<li><a href="./register">Register</a></li>                                     
+							<li><a href="./login">Login</a></li>                         
+							<li><a href="./addfood">Add Food</a></li>                         
+							<li><a href="./updatefood">Update Food</a></li>                         
+							<li><a href="./listfood">List Food</a></li>                         
+							<li><a href="./api">API</a></li>                         
+							<li><a href="./logout">Log Out</a></li>                     
+						</ul>                 
+					</div>             
+				</nav>             
+				<header class="listfood search-list">                 
+					<div class="list-container">                     
+						<h1 class="heading">Search Results</h1>
+						<hr/>                     
+						<h3 class="h3-text">Here are the results we found for your search query: <%= searchRecord %></h3>                     
+						<h3 class="h3-text"><%= searchCount %> <%= strresult %> found</h3>                    
+						<table class="table">                         
+							<thead>                             
+								<tr>                                 
+									<th>Food Name</th>                                 
+									<th>Typical Value</th>                                 
+									<th>Unit</th>                                 
+									<th>Calories</th>                                 
+									<th>Carbs</th>                                 
+									<th>Fat</th>                                 
+									<th>Protein</th>                                 
+									<th>Salt</th>                                 
+									<th>Sugar</th>                             
+									<th>User</th>                                 
+								</tr>                             
+								<tbody> 
+									<% searchedFoods.forEach(function(item) {%>
+									<% let bold= item.foodname.replace(searchRecord, "<strong>" + searchRecord + "</strong>") %>                           
+									<tr>                                     
+										<td data-label="Food Name"><%-bold %></td>                                     
+										<td data-label="Typical Value"><%= item.value %></td>                                     
+										<td data-label="Unit"><%= item.unit %></td>                                     
+										<td data-label="Calories"><%= item.calories %> kilocalories</td>                                     
+										<td data-label="Carbs"><%= item.carbs %>g</td>                                     
+										<td data-label="Fat"><%= item.fat %>g</td>                                     
+										<td data-label="Protein"><%= item.protein %>g</td>                                     
+										<td data-label="Salt"><%= item.salt %>g</td>                                     
+										<td data-label="Sugar"><%= item.sugar %>g</td>                                 
+										<td data-label="User"><%= item.username %></td>                                 
+									</tr>
+									<% }) %>                            
+								</tbody>                         
+							</thead>                     
+						</table>
+						<div class="sum">       
+							<a class="button" href="./searchfood">Search</a>                                                          
+						</div>
+					</div>             
+				</header>         
+			</div>     
+		</div> 
+	</body> 
+</html>

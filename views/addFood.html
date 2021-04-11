@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>     
+		<meta charset="UTF-8">     
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+		<title>Calorie Buddy | Add Food</title>     
+		<link rel="stylesheet" href="./main/main.css">     
+		<link rel="stylesheet" href="./main/login.css">     
+		<link rel="stylesheet" href="./main/food.css">     
+		<script src="./main/script.js" defer></script> 
+	</head> 
+	<body>     
+		<div class="container login food foodBg">         
+			<div class="top">             
+				<nav>                 
+					<a href="#" class="hamburger login-hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>                 
+					<div class="show-desktop-links">                     
+						<ul class="login-desktop show-desktop" id = "nav">                            
+							<li><a href="./">Home</a></li>                         
+							<li><a href="./about">About</a></li>                         
+							<li><a href="./register">Register</a></li>                         
+							<li><a href="./login">Login</a></li>                                     
+							<li><a href="./searchfood">Search Food</a></li>                         
+							<li><a href="./updatefood">Update Food</a></li>                         
+							<li><a href="./listfood">List Food</a></li>                         
+							<li><a href="./api">API</a></li>                         
+							<li><a href="./logout">Log Out</a></li>                     
+						</ul>                 
+					</div>             
+				</nav>             
+				<header class="addFood">                 
+					<div class="main-header">                     
+						<h1>Add Food</h1>                     
+						<hr/>                     
+						<form method="POST" action="/foodadded">                         
+							<p><input class="text-box" type="text" name="name" id="name" placeholder="Food name" required></p>                         
+							<p><input class="text-box" type="number" name="value" id="value" min="0" step=".01" placeholder="Typical value" required></p>          
+							<p><input class="text-box" type="text" name="unit" id="unit" placeholder="Unit" required></p>                         
+							<p><input class="text-box" type="number" name="calories" id="calories" min="0" step=".01" placeholder="Calories" required></p>         
+							<p><input class="text-box" type="number" name="carbs" id="carbs" min="0" step=".01" placeholder="Carbs" required></p>                  
+							<p><input class="text-box" type="number" name="fat" id="fat" min="0" step=".01" placeholder="Fat" required></p>                       
+							<p><input class="text-box" type="number" name="protein" id="protein" min="0" step=".01" placeholder="Protein" required></p>            
+							<p><input class="text-box" type="number" name="salt" id="salt" min="0" step=".01" placeholder="Salt" required></p>                     
+							<p><input class="text-box" type="number" name="sugar" id="sugar" min="0" step=".01" placeholder="Sugar" required></p>                  
+							<p><input class="button" type="submit" value="Add"></p>                     
+						</form>                 
+					</div>             
+				</header>         
+			</div>     
+		</div> 
+	</body> 
+</html>
+
