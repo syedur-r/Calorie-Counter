@@ -1,4 +1,4 @@
-**Bookshop Dynamic Web Application**
+**Calorie Counter Web Application**
 
 You can access the running web application via the URL below:
 http://doc.gold.ac.uk/usr/474/ 
@@ -305,6 +305,8 @@ email: <string>,
 
 username: <string>,
 
-password: <string>
+password: <string>,
+
+hashedpassword: <string>,
 
 }
